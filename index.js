@@ -8,5 +8,16 @@ function distanceFromHqInBlocks(location) {
 }
 
 function distanceFromHqInFeet(location) {
-  return distanceFromHqInBlocks(location) * 264
+  return distanceFromHqInBlocks(location) * 264;
+}
+
+function distanceTravelledInFeet(start, end) {
+  let distanceTravelled = 0;
+  if (start > end) {
+    distanceTravelled = start - end;
+  }
+  else {
+    distanceTravelled = end - start;
+  }
+  return distanceTravelled * 264;
 }
